@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+.background{
+    background-image: url('../images/background_img.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* or other background size properties */
+    height: 100vh;
+    /* Other CSS rules for the body element */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*    meterle luz de atras*/
+}
+.square img {
+    display: block; /* Make the image a block element */
+    margin: 25px auto 0; /* Add margin-top: 10px to lower the image a bit */
+}
+.square p {
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: transform 1s ease; /* Add a transition for smooth movement */
+
+}
+
+
+.square{
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 34%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.5) 34.33%, rgba(0, 0, 0, 0.1) 34.33%);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding a small shadow */
+    margin-bottom: 20px;
+}
+
+.square:hover {
+    transform: scale(1.05); /* Increase the size by 5% */
+    transition: transform 0.1s ease; /* Add a smooth transition effect */
+}
+
+.grid-of-squares{
+    position: relative;
+    top:10%;
+    left: 16%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    max-width: 1000px; /* Adjust this value as needed */
+    height: auto;
+    max-height: 62.1%;
+    overflow-y: auto;
+}
+
+.types{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searches {
+    position:absolute;
+    left:18.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.autocomplete,
+.search-by-type {
+    flex: 1;
+    padding-right: 1%;
+}

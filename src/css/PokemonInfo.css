@@ -1,0 +1,92 @@
+.background{
+    background-image: url('../images/background_img.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* or other background size properties */
+    height: 100vh;
+    /* Other CSS rules for the body element */
+}
+
+
+.big-square {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 400px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adding a small shadow */
+    margin-bottom: 60px;
+}
+
+.big-square img{
+    position: relative;
+    left: 15%;
+    top:5%;
+    height: 200px;
+    width: auto;
+    margin-bottom: 50px;
+
+}
+.pokemon-types{
+    position: relative;
+    left: 20%;
+}
+.pokemon-type {
+    transform: scale(1.5);
+}
+h1, h3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comfortaa", sans-serif;
+
+}
+
+.grid-of-squares1{
+    position: relative;
+    left: 18%;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px;
+    padding: 10px;
+    max-width: 1000px; /* Adjust this value as needed */
+    height: auto;
+    max-height: 62.1%;
+    overflow-y: auto;
+}
+
+
+.evolution-square{
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 34%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.5) 34.33%, rgba(0, 0, 0, 0.1) 34.33%);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding a small shadow */
+    margin-bottom: 20px;
+}
+
+.base-stats{
+    position: absolute;
+    top:7%;
+    left: 60%;
+}
+
+.evolution-square img {
+    display: block; /* Make the image a block element */
+    margin: 25px auto 0; /* Add margin-top: 10px to lower the image a bit */
+}
+.evolution-square p {
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: transform 1s ease; /* Add a transition for smooth movement */
+
+}
