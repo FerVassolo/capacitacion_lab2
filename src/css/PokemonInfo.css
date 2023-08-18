@@ -56,7 +56,6 @@ h1, h3{
     max-width: 1000px; /* Adjust this value as needed */
     height: auto;
     max-height: 62.1%;
-    overflow-y: auto;
 }
 
 
