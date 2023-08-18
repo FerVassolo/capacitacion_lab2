@@ -46,6 +46,7 @@ export default function HomePage() {
 
    //1010 pokemons numbered from https://pokeapi.co/api/v2/pokemon/1 to https://pokeapi.co/api/v2/pokemon/1010
     const displayAllPokemons = async () => {
+        // By default I put 20 so it loads faster
         const promises = Array.from({ length: 20 }).map(async (_, index) => {
             const pokemonNumber = index + 1;
             try {
